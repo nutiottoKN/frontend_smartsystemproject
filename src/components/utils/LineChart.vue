@@ -1,5 +1,5 @@
 <template>
-  <canvas ref="myChart" width="700px" height="350px"></canvas>
+  <canvas ref="myChart" width="700px" height="500px"></canvas>
 </template>
 
 <script>
@@ -14,8 +14,8 @@
           type: Array
         }
     },
-    async mounted () {
-      await new Chart(this.$refs.myChart, {
+    mounted () {
+      new Chart(this.$refs.myChart, {
       type: 'line',
       data: {
         labels: this.label,
@@ -25,6 +25,7 @@
               label: '',
               data: this.chartData,
               fill: false,
+              pointRadius: 1,
               borderColor: '#2554FF',
               backgroundColor: '#2554FF',
               borderWidth: 1

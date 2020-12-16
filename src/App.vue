@@ -1,13 +1,8 @@
 <template>
-  <div id="app">
-    <div id="index">
-      <img alt="Vue logo" src="./assets/logo.png">
-    </div>
-    
+  <div id="app">  
     <div>
-      <FrontEnd msg="Welcome to Your Vue.js App"/>
-    </div>
-    
+      <FrontEnd msg="LINE DATA ANALYSIS!"/>
+    </div>    
   </div>
 </template>
 
@@ -24,7 +19,7 @@ export default {
 
 <style>
 #app {
-  
+  text-align: center;
 }
 #index {
   font-family: Avenir, Helvetica, Arial, sans-serif;
